@@ -2,23 +2,23 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaNodeJs } from "react-icons/fa"
+import { Html5, Css3, Javascript, ReactLogo, Python, Nodejs } from "styled-icons/boxicons-logos"
 
 const skills = [
-  { name: "HTML", icon: FaHtml5, color: "#f26b20", progress: 98 },
-  { name: "CSS", icon: FaCss3Alt, color: "#6d83ff", progress: 92 },
-  { name: "JavaScript", icon: FaJs, color: "#ffd700", progress: 80 },
-  { name: "React", icon: FaReact, color: "#00ffff", progress: 75 },
-  { name: "Python", icon: FaPython, color: "#ff8c00", progress: 90 },
-  { name: "Node.js", icon: FaNodeJs, color: "#90ee90", progress: 65 },
+  { name: "HTML", icon: Html5, color: "#f26b20", progress: 98 },
+  { name: "CSS", icon: Css3, color: "#6d83ff", progress: 92 },
+  { name: "JavaScript", icon: Javascript, color: "#ffd700", progress: 80 },
+  { name: "React", icon: ReactLogo, color: "#00ffff", progress: 75 },
+  { name: "Python", icon: Python, color: "#ff8c00", progress: 90 },
+  { name: "Node.js", icon: Nodejs, color: "#90ee90", progress: 65 },
 ]
 
 export function Skills() {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
 
   return (
-    <section id="skills" className="py-20">
-      <div className="container  text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+    <section id="skills" className="pt-20 bg-gradient-to-b from-violet-950 overflow-hidden">
+      <div className="container  max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32 text-white">
         <motion.div
           className="relative mb-20"
           initial={{ opacity: 0, y: 20 }}
@@ -96,3 +96,4 @@ export function Skills() {
     </section>
   )
 }
+

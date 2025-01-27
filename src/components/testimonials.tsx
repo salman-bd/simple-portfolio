@@ -22,8 +22,8 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+    <section id="testimonials" className=" bg-gradient-to-b from-violet-950">
+      <div className="container max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32">
         <h2 className="text-4xl font-heading font-bold text-center mb-16 pb-4 text-primary-tertiary border-b-2 border-primary-secondary">
           Testimonials
         </h2>
@@ -31,7 +31,7 @@ export function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className={`bg-secondary-dark border-4 border-primary-secondary hover:shadow-[0_0_25px_rgba(241,90,36,0.5),0_0_50px_rgba(241,90,36,0.3)] transition-shadow ${
+              className={`bg-secondary-dark border-4 border-orange-600 hover:shadow-[0_0_25px_rgba(241,90,36,0.5),0_0_50px_rgba(241,90,36,0.3)] transition-shadow ${
                 index === 0 ? "hover:skew-x-[-2deg]" : index === 2 ? "hover:skew-x-[2deg]" : ""
               }`}
             >

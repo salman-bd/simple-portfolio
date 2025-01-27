@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${poppins.variable} ${rubik.variable} font-sans  text-white`}>
+      <body className={`${poppins.variable} ${rubik.variable} font-sans bg-indigo-950 text-white`}>
         <Header />
         {children}
         <Footer />

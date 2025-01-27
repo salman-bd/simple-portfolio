@@ -1,5 +1,3 @@
-'use client'
-
 import { Card, CardContent } from "@/components/ui/card"
 
 const educationData = [
@@ -31,16 +29,16 @@ const educationData = [
 
 export function Education() {
   return (
-    <section id="education" className="bg-gradient-to-b from-violet-900 to-violet-950 overflow-hidden">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-        <h2 className="text-4xl font-heading font-bold text-center mb-16 pb-4 text-orange-500 border-b-2 border-primary-secondary">
+    <section id="education" className=" bg-gradient-to-b from-violet-950">
+      <div className="container max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32">
+        <h2 className="text-4xl font-heading font-bold text-center mb-16 pb-4 text-orange-600 border-b-2 border-primary-secondary">
           Education
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {educationData.map((item, index) => (
             <Card
               key={index}
-              className="bg-secondary border-2 border-orange-500 hover:scale-105 transition-transform duration-300 cursor-pointer group"
+              className="bg-secondary border-2 border-orange-600 hover:scale-105 transition-transform duration-300 cursor-pointer group"
             >
               <CardContent className="p-6 space-y-4">
                 <div className="w-24 bg-primary-secondary text-white text-xl text-center py-2 rounded-tr-3xl">
