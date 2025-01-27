@@ -27,7 +27,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="bg-secondary-dark">
+    <section id="services" className="bg-gradient-to-b from-violet-900 to-violet-950 overflow-hidden">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <h2 className="text-4xl font-heading font-bold text-center mb-16 pb-4 border-b-2 border-white">Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

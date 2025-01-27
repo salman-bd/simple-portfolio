@@ -17,7 +17,7 @@ export function Skills() {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-b from-violet-900 to-violet-950 overflow-hidden">
+    <section id="skills" className="py-20">
       <div className="container  text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <motion.div
           className="relative mb-20"

@@ -22,7 +22,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="bg-gradient-to-b from-violet-900 to-violet-950 overflow-hidden">
+    <section id="testimonials" className="">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <h2 className="text-4xl font-heading font-bold text-center mb-16 pb-4 text-primary-tertiary border-b-2 border-primary-secondary">
           Testimonials
