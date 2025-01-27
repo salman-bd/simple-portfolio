@@ -74,7 +74,7 @@ export function Hero() {
                 src="/shahed-00.png"
                 alt="Profile"
                 fill
-                className="object-cover rounded-full border-4 border-primary-secondary shadow-[0_0_25px_rgba(241,90,36,0.5),0_0_50px_rgba(241,90,36,0.3)] animate-pulse"
+                className="object-cover rounded-full border-4 border-primary-secondary shadow-[0_0_25px_rgba(241,90,36,0.5),0_0_50px_rgba(241,90,36,0.3)] animate-pulse bg-orange-700"
               />
             </div>
           </div>
