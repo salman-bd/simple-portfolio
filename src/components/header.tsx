@@ -29,11 +29,11 @@ export function Header() {
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-foreground/95 backdrop-blur-sm py-2" : "bg-transparent py-4"} bg-indigo-900`}
     >
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
             <Link href="#" className="text-2xl font-heading font-bold">
-              <span className="text-primary-secondary">Logo</span>
+              <span className="text-orange-500">Logo</span>
             </Link>
           </div>
 
@@ -43,7 +43,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold text-white hover:text-primary-tertiary transition-colors"
+                className="text-sm font-semibold text-white hover:text-orange-500 transition-colors"
               >
                 {item.name}
               </Link>
