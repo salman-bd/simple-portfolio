@@ -4,7 +4,7 @@ import { Github, Linkedin, Twitter, Facebook } from "lucide-react"
 export function Footer() {
   return (
     <footer className=" bg-gradient-to-b from-violet-950 py-12">
-      <div className="container flex flex-col items-center gap-8">
+      <div className="container flex flex-col items-center gap-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="flex gap-4">
           {[
             { icon: Linkedin, href: "#" },
@@ -23,7 +23,7 @@ export function Footer() {
         </div>
 
         <nav>
-          <ul className="flex flex-wrap justify-center gap-6 text-sm">
+          <ul className="flex flex-wrap justify-center gap-4 lg:gap-8 text-sm">
             <li>
               <Link href="#" className="hover:text-primary-secondary transition-colors">
                 FAQ
@@ -52,11 +52,11 @@ export function Footer() {
           </ul>
         </nav>
 
-        <div className="flex justify-between gap-6">
+        <div className="flex flex-col lg:flex-row justify-between items-center lg:gap-8">
           <p className="text-sm text-muted-foreground">&copy; Shahed Imran</p>
           <p className="text-sm text-muted-foreground">Developed by: Md. Abu Salman</p>
         </div>
-        
+
       </div>
     </footer>
   )
