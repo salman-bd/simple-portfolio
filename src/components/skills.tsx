@@ -68,7 +68,8 @@ const skills = [
 ]
 
 const Skills = () => {
-  const [hoveredSkill, setHoveredSkill] = useState(null)
+  // Fix: Change the type from null to string | null
+  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
 
   return (
     <section id="skills" className="pt-20 bg-gradient-to-b from-lime-900 to-lime-950 overflow-hidden">
