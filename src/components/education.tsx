@@ -59,3 +59,8 @@ const Education = () => {
 
 export default Education
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> e67228a7a32128fafdab133a5d79445024e99412
