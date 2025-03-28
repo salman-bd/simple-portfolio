@@ -1,62 +1,92 @@
-import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
-import { Star } from "lucide-react"
+import { Star, Quote } from "lucide-react"
+import Image from "next/image"
 
 const testimonials = [
   {
-    name: "Imran",
-    image: "/avatar.png?height=150&width=150",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    name: "John Doe",
+    role: "CEO, TechCorp",
+    text: "This is a great product! I highly recommend it to anyone looking for a solution to their problem.",
+    image: "/portfolio-shahed-t1.jpg?height=150&width=150",
   },
   {
-    name: "Shahed",
-    image: "/avatar.png?height=150&width=150",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    name: "Jane Smith",
+    role: "Marketing Director",
+    text: "I was skeptical at first, but this product exceeded my expectations. It's easy to use and delivers amazing results.",
+    image: "/portfolio-shahed-t2.jpg?height=150&width=150",
   },
   {
-    name: "Mohammad",
-    image: "/avatar.png?height=150&width=150",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    name: "Peter Jones",
+    role: "Freelance Developer",
+    text: "I've tried many similar products before, but this one is by far the best. It's worth every penny!",
+    image: "/portfolio-shahed-t3.jpg?height=150&width=150",
   },
 ]
 
-export function Testimonials() {
+const Testimonials = () => {
   return (
-    <section id="testimonials" className=" bg-gradient-to-b from-violet-950">
-      <div className="container max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32">
-        <h2 className="text-4xl font-heading font-bold text-center mb-16 pb-4 text-primary-tertiary border-b-2 border-primary-secondary">
-          Testimonials
+    <section id="testimonials" className="bg-gradient-to-b from-lime-900 to-lime-950 py-24">
+      <div className="container max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 className="text-4xl font-heading font-bold text-center mb-16 text-amber-500">
+          What People <span className="text-lime-300">Say</span>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card
-              key={index}
-              className={`bg-secondary-dark border-4 border-orange-600 hover:shadow-[0_0_25px_rgba(241,90,36,0.5),0_0_50px_rgba(241,90,36,0.3)] transition-shadow ${
-                index === 0 ? "hover:skew-x-[-2deg]" : index === 2 ? "hover:skew-x-[2deg]" : ""
-              }`}
-            >
-              <CardContent className="p-6 flex flex-col items-center gap-4">
-                <div className="relative w-40 h-40 transition-all duration-300 hover:w-44 hover:h-44">
-                  <Image
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.name}
-                    fill
-                    className="rounded-full border-4 border-primary-secondary shadow-[0_0_25px_rgba(241,90,36,0.5)]"
-                  />
-                </div>
-                <h3 className="text-xl font-heading font-semibold">{testimonial.name}</h3>
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-primary-secondary text-primary-secondary" />
-                  ))}
-                </div>
-                <p className="text-sm text-justify">{testimonial.text}</p>
-              </CardContent>
-            </Card>
+            <div key={index} className="group">
+              <div className="relative">
+                {/* Decorative elements */}
+                <div className="absolute -top-6 -left-6 w-12 h-12 bg-amber-500 rounded-tl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -bottom-6 -right-6 w-12 h-12 bg-lime-500 rounded-br-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                {/* Card */}
+                <Card className="bg-gradient-to-br from-lime-950 to-lime-900 border-none shadow-xl overflow-hidden transform transition-all duration-300 group-hover:translate-y-[-10px]">
+                  <CardContent className="p-0">
+                    {/* Top section with quote icon */}
+                    <div className="bg-amber-500 p-4 flex justify-end">
+                      <Quote className="w-8 h-8 text-lime-950" />
+                    </div>
+
+                    {/* Content */}
+                    <div className="p-6 text-center">
+                      <div className="flex flex-col items-center">
+                        {/* Image */}
+                        <div className="relative w-20 h-20 -mt-16 mb-4 rounded-full overflow-hidden border-4 border-lime-500 shadow-lg">
+                          <Image
+                            src={testimonial.image || "/placeholder.svg"}
+                            alt={testimonial.name}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+
+                        {/* Stars */}
+                        <div className="flex gap-1 mb-4">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="w-4 h-4 fill-amber-500 text-amber-500" />
+                          ))}
+                        </div>
+
+                        {/* Text */}
+                        <p className="text-lime-100 italic mb-6">"{testimonial.text}"</p>
+
+                        {/* Name and role */}
+                        <div className="mt-auto">
+                          <h3 className="text-xl font-heading font-semibold text-amber-400">{testimonial.name}</h3>
+                          <p className="text-sm text-lime-300">{testimonial.role}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>
     </section>
   )
 }
+
+export default Testimonials
 
