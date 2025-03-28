@@ -43,7 +43,7 @@ const Header = () => {
           <div className="flex overflow-hidden">
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="text-2xl font-bold text-gray-800">
-                <Image src="/shahed-00.png" width={36} height={36} alt="Logo" className="rounded-full bg-amber-500" />
+                <Image src="/portfolio-shahed-tr-2.png" width={36} height={36} alt="Logo" className="rounded-full bg-amber-500" />
               </Link>
             </div>
           </div>

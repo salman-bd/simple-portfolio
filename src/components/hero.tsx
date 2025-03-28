@@ -97,7 +97,7 @@ export default function Hero() {
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96">
               <div className="absolute inset-0 bg-gradient-to-r from-lime-500 to-amber-500 rounded-3xl animate-[spin_20s_linear_infinite] opacity-70 blur-md"></div>
               <Image
-                src="/shahed-00.png"
+                src="/portfolio-shahed-tr-3.png"
                 alt="Profile"
                 fill
                 className="object-cover rounded-3xl border-4 border-amber-500 shadow-[0_0_25px_rgba(132,204,22,0.5),0_0_50px_rgba(245,158,11,0.3)] z-10 relative"
