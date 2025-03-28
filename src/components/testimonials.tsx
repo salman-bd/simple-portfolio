@@ -68,7 +68,7 @@ const Testimonials = () => {
                         </div>
 
                         {/* Text */}
-                        <p className="text-lime-100 italic mb-6">"{testimonial.text}"</p>
+                        <p className="text-lime-100 italic mb-6">&quot;{testimonial.text}&quot;</p>
 
                         {/* Name and role */}
                         <div className="mt-auto">
