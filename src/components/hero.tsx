@@ -6,7 +6,7 @@ import { Linkedin, Github, Facebook, Twitter } from "lucide-react"
 
 export default function Hero() {
   return (
-    <section id="home" className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-lime-900 to-lime-950">
+    <section id="home" className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-lime-950 to-lime-900">
       <div className="container mx-auto max-w-7xl px-6 lg:px-8 py-24 md:py-32">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
           <div className="flex-1 space-y-8 text-center lg:text-left">

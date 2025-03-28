@@ -72,7 +72,7 @@ const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
 
   return (
-    <section id="skills" className="pt-20 bg-gradient-to-b from-lime-900 to-lime-950 overflow-hidden">
+    <section id="skills" className="pt-20 bg-gradient-to-b from-lime-950 to-lime-900 overflow-hidden">
       <div className="container max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32 text-white">
         <motion.div
           className="relative mb-20"

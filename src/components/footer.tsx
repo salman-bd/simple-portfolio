@@ -3,7 +3,7 @@ import { Linkedin, Github, Facebook, Twitter } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-lime-900 to-lime-950 py-12">
+    <footer className="bg-gradient-to-b from-lime-950 to-lime-900 py-12">
       <div className="container flex flex-col items-center gap-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="flex gap-4">
           {[

@@ -25,7 +25,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="bg-gradient-to-b from-lime-900 to-lime-950 py-24">
+    <section id="testimonials" className="bg-gradient-to-b from-lime-950 to-lime-900 py-24">
       <div className="container max-w-7xl mx-auto px-6 lg:px-8">
         <h2 className="text-4xl font-heading font-bold text-center mb-16 text-amber-500">
           What People <span className="text-lime-300">Say</span>

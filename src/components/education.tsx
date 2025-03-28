@@ -29,7 +29,7 @@ const educationData = [
 
 const Education = () => {
   return (
-    <section id="education" className="bg-gradient-to-b from-lime-900 to-lime-950">
+    <section id="education" className="bg-gradient-to-b from-lime-950 to-lime-900">
       <div className="container max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32">
         <h2 className="text-4xl font-heading font-bold text-center mb-16 pb-4 text-amber-500 border-b-2 border-lime-500">
           Education

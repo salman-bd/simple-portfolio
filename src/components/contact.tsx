@@ -61,7 +61,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-lime-800 to-lime-950">
+    <section id="contact" className="py-20 bg-gradient-to-b from-lime-950 to-lime-900">
       <Toaster position="top-center" />
       <div className="container max-w-2xl">
         <h2 className="text-4xl text-amber-500 font-heading font-bold text-center mb-16">
