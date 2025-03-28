@@ -1,7 +1,15 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from "tailwindcss"
+
+const config = {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "*.{js,ts,jsx,tsx,mdx}",
+  ],
+  prefix: "",
   theme: {
     container: {
       center: true,
@@ -18,12 +26,15 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#84cc16", // lime-500
           foreground: "hsl(var(--primary-foreground))",
+          secondary: "#65a30d", // lime-600
+          tertiary: "#d9f99d", // lime-200
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
+          DEFAULT: "#f59e0b", // amber-500
           foreground: "hsl(var(--secondary-foreground))",
+          dark: "#78350f", // amber-900
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -53,12 +64,12 @@ module.exports = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          to: { height: "0" },
         },
         "text-slide": {
           "0%, 16%": {
@@ -77,17 +88,19 @@ module.exports = {
             transform: "translateY(-66.66%)",
           },
           "100%": {
-            transform: "translateY(-83.33%)",
+            transform: "translateY(0%)",
           },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "text-slide": "text-slide 12s cubic-bezier(0.83, 0, 0.17, 1) infinite",
+        "text-slide": "text-slide 12s infinite",
       },
     },
   },
-  plugins: [import("tailwindcss-animate")],
-}
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config
+
+export default config
 
